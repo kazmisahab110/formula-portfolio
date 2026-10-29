@@ -1,0 +1,243 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600;700&display=swap");
+
+.welcome-screen {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  background:
+    linear-gradient(
+      115deg,
+      rgba(8, 12, 20, 0.98),
+      rgba(15, 22, 35, 0.95)
+    );
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-family: "Rajdhani", sans-serif;
+  overflow: hidden;
+  animation: welcomeFadeIn 0.6s ease-out;
+}
+
+.welcome-screen::before {
+  content: "";
+  position: absolute;
+  width: 65vw;
+  height: 65vw;
+  border: 1px solid rgba(255, 255, 255, 0.04);
+  border-radius: 50%;
+  right: -25vw;
+  top: -20vw;
+  box-shadow:
+    0 0 0 80px rgba(255, 255, 255, 0.012),
+    0 0 0 160px rgba(255, 255, 255, 0.008);
+}
+
+.welcome-screen::after {
+  content: "";
+  position: absolute;
+  width: 5px;
+  height: 150%;
+  background: #e10600;
+  transform: rotate(25deg);
+  right: 17%;
+  top: -25%;
+  opacity: 0.7;
+}
+
+.welcome-content {
+  position: relative;
+  z-index: 2;
+  width: min(90%, 950px);
+}
+
+.welcome-eyebrow {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 15px;
+  letter-spacing: 4px;
+  font-weight: 700;
+  color: #b6becb;
+}
+
+.welcome-red-line {
+  display: inline-block;
+  width: 35px;
+  height: 3px;
+  background: #e10600;
+}
+
+.welcome-title {
+  font-family: "Russo One", "Rajdhani", sans-serif;
+  font-size: clamp(56px, 9vw, 130px);
+  line-height: 1.05;
+  letter-spacing: -3px;
+  margin: 30px 0 24px;
+  font-style: italic;
+}
+
+.welcome-title span {
+  display: block;
+  color: #e10600;
+}
+
+.welcome-divider {
+  height: 2px;
+  width: 100px;
+  background: #e10600;
+  margin: 28px 0;
+}
+
+.welcome-name {
+  font-size: clamp(22px, 3vw, 35px);
+  font-weight: 700;
+  letter-spacing: 3px;
+  margin: 0;
+}
+
+.welcome-description {
+  font-size: 20px;
+  font-weight: 600;
+  color: #e10600;
+  margin-top: 8px;
+}
+
+.welcome-subtitle {
+  font-size: 20px;
+  color: #a9b2c1;
+  max-width: 540px;
+  line-height: 1.5;
+  margin: 25px 0 35px;
+}
+
+.welcome-start-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 55px;
+  background: #e10600;
+  color: white;
+  border: none;
+  padding: 20px 30px;
+  font-family: "Rajdhani", sans-serif;
+  font-size: 22px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  cursor: pointer;
+  transition: 0.25s ease;
+  clip-path: polygon(
+    0 0,
+    94% 0,
+    100% 25%,
+    100% 100%,
+    0 100%
+  );
+}
+
+.welcome-start-button:hover {
+  background: #ff241e;
+  transform: translateY(-3px);
+  box-shadow: 0 10px 30px rgba(225, 6, 0, 0.3);
+}
+
+.welcome-start-button span {
+  font-size: 30px;
+}
+
+.welcome-instructions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-top: 40px;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: #818b9c;
+}
+
+.welcome-side-label {
+  position: absolute;
+  right: 25px;
+  top: 50%;
+  transform: translateY(-50%);
+  writing-mode: vertical-rl;
+  letter-spacing: 5px;
+  font-weight: 700;
+  color: #64748b;
+}
+
+.welcome-bottom-bar {
+  position: absolute;
+  bottom: 25px;
+  left: 5%;
+  right: 5%;
+  display: flex;
+  justify-content: space-between;
+  font-size: 13px;
+  letter-spacing: 2px;
+  color: #7c8799;
+}
+
+@keyframes welcomeFadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@media (max-width: 600px) {
+  .welcome-title {
+    letter-spacing: -1px;
+  }
+
+  .welcome-side-label {
+    display: none;
+  }
+
+  .welcome-bottom-bar {
+    font-size: 10px;
+    gap: 12px;
+  }
+
+  .welcome-instructions {
+    gap: 12px;
+  }
+}
+
+
+.welcome-explore-button {
+  display: block;
+  margin: 16px auto 0;
+  padding: 15px 32px;
+
+  background: rgba(15, 23, 42, 0.85);
+  color: #ffffff;
+
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  border-radius: 6px;
+
+  font-family: "Russo One", Arial, sans-serif;
+  font-size: 12px;
+  letter-spacing: 1.5px;
+
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.welcome-explore-button:hover {
+  background: rgba(225, 6, 0, 0.15);
+  border-color: #e10600;
+  transform: translateY(-2px);
+}
+
+@media (max-width: 600px) {
+  .welcome-explore-button {
+    width: 90%;
+    max-width: 300px;
+  }
+}
+

@@ -1,0 +1,163 @@
+
+.portfolio-navbar {
+  position: absolute;
+  top: 18px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: min(1050px, calc(100% - 32px));
+  min-height: 66px;
+  box-sizing: border-box;
+  padding: 12px 20px;
+  background: rgba(12, 17, 27, 0.94);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-top: 3px solid #e10600;
+  border-radius: 12px;
+  backdrop-filter: blur(14px);
+  z-index: 50;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+
+  font-family: "Russo One", Arial, sans-serif;
+}
+
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  white-space: nowrap;
+}
+
+.navbar-brand-mark {
+  background: #e10600;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.navbar-brand-name {
+  color: white;
+  font-size: 15px;
+  letter-spacing: 1px;
+}
+
+.navbar-brand-name span {
+  color: #e10600;
+}
+
+.navbar-links {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.navbar-links button {
+  background: transparent;
+  color: #d1d5db;
+  border: none;
+  padding: 12px 14px;
+  font-family: inherit;
+  font-size: 11px;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.navbar-links button:hover {
+  color: white;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.navbar-links .navbar-race-button {
+  background: #e10600;
+  color: white;
+  border-radius: 5px;
+  padding: 12px 20px;
+}
+
+.navbar-links .navbar-race-button:hover {
+  background: #b90500;
+}
+
+@media (max-width: 760px) {
+  .portfolio-navbar {
+    top: 10px;
+    padding: 12px;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .navbar-brand-name {
+    font-size: 13px;
+  }
+
+  .navbar-links {
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 4px;
+  }
+
+  .navbar-links button {
+    font-size: 10px;
+    padding: 10px;
+  }
+}
+
+.portfolio-navbar {
+  position: absolute;
+  top: 18px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 200;
+  background: #101722;
+  color: white;
+  padding: 16px;
+  border: 2px solid #e10600;
+  border-radius: 12px;
+}
+
+
+/* Tablet screens */
+@media (max-width: 900px) {
+  .portfolio-navbar {
+    width: calc(100% - 32px);
+    max-width: none;
+    box-sizing: border-box;
+    padding: 12px 16px;
+  }
+}
+
+/* Mobile screens */
+@media (max-width: 600px) {
+  .portfolio-navbar {
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    width: calc(100% - 20px);
+    padding: 12px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+
+    border-radius: 10px;
+  }
+
+  .portfolio-navbar button {
+    font-size: 10px;
+    padding: 9px 10px;
+    white-space: nowrap;
+  }
+}
+
+@media (max-width: 600px) {
+  .portfolio-navbar {
+    z-index: 200;
+  }
+}
+

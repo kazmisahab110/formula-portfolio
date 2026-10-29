@@ -1,0 +1,53 @@
+
+/* Shared responsive portfolio panel layout */
+
+/* The full-screen overlay */
+.portfolio-panel-overlay {
+  overflow: hidden;
+}
+
+/* The scrollable panel */
+.portfolio-panel-content {
+  overscroll-behavior: contain;
+  scrollbar-width: thin;
+  scrollbar-color: #475569 transparent;
+}
+
+/* Tablet and mobile */
+@media (max-width: 900px) {
+  .portfolio-panel-overlay {
+    align-items: flex-start !important;
+    padding: 110px 16px 16px !important;
+  }
+
+  .portfolio-panel-content {
+    width: 100% !important;
+    max-height: calc(100dvh - 126px) !important;
+    padding: 24px !important;
+  }
+}
+
+/* Mobile phones */
+@media (max-width: 600px) {
+  .portfolio-panel-overlay {
+    padding: 175px 12px 12px !important;
+  }
+
+  .portfolio-panel-content {
+    max-height: calc(100dvh - 187px) !important;
+    padding: 20px !important;
+    border-radius: 14px !important;
+  }
+
+  .portfolio-panel-content h1 {
+    font-size: 26px !important;
+  }
+
+  .portfolio-panel-content h2 {
+    font-size: 19px !important;
+  }
+
+  .portfolio-panel-content p {
+    line-height: 1.6;
+  }
+}
