@@ -13,7 +13,7 @@ const projects = [
     description:
       "An AI-powered platform that transforms equipment photos into interactive component maps, grounded in retrieved technical documentation.",
     technologies: ["Python", "AI/LLMs", "Computer Vision", "RAG"],
-    github: "https://github.com/kazmisahab110",
+    github: "https://github.com/kazmisahab110/spec-layer",
   },
   {
     name: "Premier Zone",
@@ -21,7 +21,7 @@ const projects = [
     description:
       "A football web application with player statistics, team exploration, REST APIs, and PostgreSQL-backed data.",
     technologies: ["Java", "Spring Boot", "React", "PostgreSQL"],
-    github: "https://github.com/kazmisahab110",
+    github: "https://github.com/kazmisahab110/premier-zone",
   },
   {
     name: "ScoutIQ",
@@ -29,7 +29,7 @@ const projects = [
     description:
       "A football analytics database project using Oracle AI Database, relational schema design, and data ingestion pipelines.",
     technologies: ["Oracle SQL", "Docker", "SQL*Loader"],
-    github: "https://github.com/kazmisahab110",
+    github: "https://github.com/kazmisahab110/ScoutIQ",
   },
   {
     name: "Formula Racing Portfolio",
@@ -37,7 +37,7 @@ const projects = [
     description:
       "An interactive racing experience that lets visitors drive around a circuit to discover software projects and portfolio information.",
     technologies: ["React", "TypeScript", "Three.js", "React Three Fiber"],
-    github: "https://github.com/kazmisahab110",
+    github: "https://github.com/kazmisahab110/formula-portfolio",
   },
 ];
 
